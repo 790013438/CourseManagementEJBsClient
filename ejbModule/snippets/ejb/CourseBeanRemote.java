@@ -1,13 +1,13 @@
 package snippets.ejb;
 
+import java.util.List;
+
 import javax.ejb.Remote;
 
-/**
- * 看看分支合并到主分支，233333333333333333
- * @author 79001
- *
- */
+import snippets.dto.CourseDTO;
+
 @Remote
 public interface CourseBeanRemote {
 
+    public List<CourseDTO> getCourses();
 }
